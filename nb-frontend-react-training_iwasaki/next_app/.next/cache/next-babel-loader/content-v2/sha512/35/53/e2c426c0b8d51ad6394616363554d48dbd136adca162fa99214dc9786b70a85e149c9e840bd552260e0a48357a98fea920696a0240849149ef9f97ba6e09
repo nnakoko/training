@@ -1,0 +1,1 @@
+{"ast":null,"code":"import func from '../../components/func';\nexport default function handler(req, res) {\n  res.json(func);\n}","map":null,"metadata":{},"sourceType":"module"}

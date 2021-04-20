@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/api/func": "pages/api/func.js",
+  "/api/hello": "pages/api/hello.js",
+  "/api/hello/[...params]": "pages/api/hello/[...params].js",
+  "/api/hello/[id]": "pages/api/hello/[id].js",
+  "/calc": "pages/calc.js",
+  "/": "pages/index.js",
+  "/other": "pages/other.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
+}

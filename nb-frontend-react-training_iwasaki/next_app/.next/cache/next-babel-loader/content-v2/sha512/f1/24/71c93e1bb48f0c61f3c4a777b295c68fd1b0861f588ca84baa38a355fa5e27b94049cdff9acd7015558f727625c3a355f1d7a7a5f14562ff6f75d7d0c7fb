@@ -1,0 +1,1 @@
+{"ast":null,"code":"import apidata from '../../../components/data';\nexport default function handler(req, res) {\n  const {\n    query: {\n      params: [id, item]\n    }\n  } = req;\n  const result = {\n    id: id,\n    item: apidata[id][item]\n  };\n  res.json(result);\n}","map":null,"metadata":{},"sourceType":"module"}
