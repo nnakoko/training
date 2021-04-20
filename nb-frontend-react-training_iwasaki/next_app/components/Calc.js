@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import usePersist from './Persist'
 
 export default function Calc(props) {
-    const [massage, setMessage] = useState('')
+    const [message, setMessage] = useState('')
     const [input, setInput] = useState('')
     const [data, setData] = usePersist('calc-history', [])
     const [func, setFunc] = useState({func:{}})
