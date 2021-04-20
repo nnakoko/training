@@ -1,1 +1,0 @@
-{"ast":null,"code":"import apidata from '../../components/data';\nexport default function handler(req, res) {\n  let id = req.query.id;\n\n  if (id == undefined) {\n    id = 0;\n  }\n\n  if (id >= apidata.length) {\n    id = 0;\n  }\n\n  res.json(apidata[id]);\n}","map":null,"metadata":{},"sourceType":"module"}
