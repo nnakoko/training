@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import usePersist from './Persist'
 
 export default function Calc(props) {
-    const [massage, setMessage] = useState('')
+    const [message, setMessage] = useState('')
     const [input, setInput] = useState('')
     const [data, setData] = usePersist('calc-history', [])
     const [func, setFunc] = useState({func:{}})
@@ -62,12 +62,12 @@ export default function Calc(props) {
                         onChange={onChange} onKeyPress={onKeyPress} />
                 </div>
                 {Object.entries(func.func).map((value, key)=>(
-                    <button className="btn btn-secoundary m-1" key={key}
+                    <button className="btn btn-secondary m-1" key={key}
                         title={value[1].caption} id={value[0]} onClick={doFunc}>{value[0]}</button>
                 ))}
             </div>
             <table className="table">
-                <thead><tr><th>Histroy:</th></tr></thead>
+                <thead><tr><th>History:</th></tr></thead>
                 <tbody>
                     {data.map((value, key)=> (
                         <tr key={key}><td>{value}</td></tr>
@@ -75,7 +75,7 @@ export default function Calc(props) {
                 </tbody>
             </table>
             <button onClick={clear} className="btn btn-warning">
-                Clear Histroy
+                Clear History
             </button>
         </div>
     )
